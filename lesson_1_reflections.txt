@@ -1,0 +1,29 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+	I was easily able to ignore the parts that were similar. The (+) and (-) also quickly identify which files have been added or removed. This makes the process very quick.
+
+	I have been using git for months and have never used the diff command. Seeing how easy and practical its usage is makes me much more inclined to use version control regularly.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+	Facilitates creativity and freedom while also maintaining responsibility. This means less fear, faster iteration, better final products without the hassle of worrying about loss.
+
+	If a few months down the road an old bug rears his ugly head, debugging will be much easier, faster and effective.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+	Pro: Manual commits allow editor to imbue a sense of meaning or purpose to each commit. This helps create a logical separation between commits, whereas automated, say hourly, commits may be completley nonsensical.
+
+	Con: Manual commits can miss critical changes, can be too large, or can be forgotten altogether. The only way for manual commits to be great is to make a habit of committing.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+	Git repositories are essential to interlinked files. Software often relies on code written across multiple files to function properly and therefore it would be silly not to track changes across these files concurrently. Google Docs does not use this feature because written text does not have the same level of interdependence. While there might be some use cases for 'repository-level' change tracking in Google Docs, it is not essential as it is in software development.
+
+How can you use the commands git log and git diff to view the history of files?
+
+	I have never used git log. That will surely change, especially if I make a better habit of committing after each meaningful update to my repository. Git log is great because it provides a quick, accessible history of the commit changes, while git diff is great for a fine-grain understanding of the actual differences between two individual commits.
+
+How might using version control make you more confident to make changes that could break something?
+
+	As I expressed before, version control enables a certain about of freedom and creativity because the changes will be tracked throughout time (if effective commit hygiene is used).
