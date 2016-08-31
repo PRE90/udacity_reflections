@@ -18,12 +18,15 @@ use one instead of another?
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+	Minimizes the size of merge conflicts.
+    
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    I wouldn't do it without Git. It would be a nightmare. If I had to, I would have a master file that would not be opened unless the whole team was present. All changes would be made in separate files that referenced where they were to go in the master file and which lines they would replace. Then, during a meeting each change would be discussed and accepted or denied. 
+
+    The only thing easier about this is that it does not require knowledge of the slightly arcane github workflow.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
