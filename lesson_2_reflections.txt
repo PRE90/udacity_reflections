@@ -1,6 +1,12 @@
 What happens when you initialize a repository? Why do you need to do it?
 
+	A safe space, similar to a folder, is created where the files can be stored.
 
+	A repo is different from a dumb folder though in that it is the foundation of version control. A repo is the largest logical unit of code used in version control. All the files within a repo should be necessary for the function of a code base.
+
+	Technically, an invisible .git file is created with each initialization and this file is what tracks the changes across the lifetime of a repo. This file is sort of like the DNA of a repo and initialization is the birth (obviously DNA doesn't change over a lifetime, so the analogy doesn't REALLY hold up, but you get the point (Although if we're getting technical, there are myriad epigentic changes so... I digress)).
+
+	You need to initialize a repository because this allows change-tracking, commit history, all the features of version control are granted to users through the repository.
 
 How is the staging area different from the working directory and the repository? 
 What value do you think it offers?
@@ -11,22 +17,33 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical change?
 
-
+	(see above)
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	Branches are great for making alterations when I am uncertain of the value of a certain train of thought.
+	A branch can represent a significant departure in thinking without threatening the integrity of the code base. It can also be great for collaboration because each collaborator can have his or her own branch.
+
+	Additionally branches are great because if the changes issued within a branch do seem to have value they can always be merged into the master branch at a later time
 
 
 How do the diagrams help you visualize the branch structure?
 
+	Detached head state is much less terrifying when I have the diagram to comfort me. I must more clearly realize what is meant by this. 
 
+	I'll probably draw out digrams as I am creating new repos to further internalize the structure and create a more robust mental model of the branching and commits. 
+
+	The diagrams are particularly useful when it comes to branching and merging.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
-
+	As long as there are no merge conflicts, the changes in each branch are combined into one file. If there is only one branch, then the merge creates a new head and is thought of as merging to master. 
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+	
+	Automated merging, or rather semi-automated merging is great because it drastically speeds up the merging process, but only if the mergers are familiar with the process and are disciplined with their code manipulation.
 
+	Because 'automated-merging' only compares similar lines across files it is prone to false positives which can result in code loss, and also false negatives which are frustrating, but relatively benign. The former is the case to be keenly aware of and makes me realize the necessity of clearly specifying roles when working on a large codebase with a team of any size.
