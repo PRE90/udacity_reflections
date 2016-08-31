@@ -11,7 +11,9 @@ automatically stay up-to-date with your remote repository?
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    A fork is a new repository with the identical contents that is detached from the original repository in that it allows the owner of the fork to commit, pull, etc. without the original owners consent. Forking is the preferred method for using open source code because it credits the original creator, whereas cloning and initializing a new repository may obfuscate origination.
+
+    Cloning is the easiest way to localize a repo from github. It automatically adds a remote and copies all the repo contents onto the local machine. Cloning is great if you are not necessarily editing the file, and want to stay in touch with any changes. With a cloned repo, updating the code base is as simple as pulling down any new changes.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
