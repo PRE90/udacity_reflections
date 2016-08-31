@@ -31,4 +31,8 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+   I would exclusively make changes to a separate branch if I am collaborating on a project. 
+
+   Even if I'm not collaborating I may make separate branches to test out new features without polluting the source. Then, if I test and decide that I like the changes I can pull them into master.
+
+   Working directly on the master is easier, other than that, there are few benefits.
